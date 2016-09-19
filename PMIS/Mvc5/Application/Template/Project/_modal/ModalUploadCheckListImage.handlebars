@@ -1,0 +1,19 @@
+<form id="FormUploadCheckList" method="post" enctype="multipart/form-data">
+  <div class="dashboard-section-header">
+    <h4 class="dashboard-section-header-title">
+        <div class="btn no-border btn-file size-32">
+            <i class="lnr lnr-cloud-upload size-32"></i> Attach a Image
+            <input type="file" id="file_checklist" name="file" class="form-control span-small" tabindex="9"/>
+        </div>
+    </h4>
+  </div>
+
+
+  <input type="hidden" id="TasksId" name="TasksId" value="{{TasksId}}" />
+  <input type="hidden" id="CheckListId" name="CheckListId" value="{{CheckListId}}" />
+</form>
+{{!-- end form upload --}}
+
+
+{{!-- render image table --}}
+<div id="image-list"></div>

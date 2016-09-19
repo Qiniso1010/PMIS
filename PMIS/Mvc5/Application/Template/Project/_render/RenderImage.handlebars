@@ -1,0 +1,14 @@
+{{#ifx Rows}}
+
+  {{else}}
+    <div class="col-md-12 image-modal">
+      {{#each Rows}}
+        <div class="images-header">
+            <a href="javascript:;" id="btnDeleteImage" data-id="{{Id}}" class="image-delete" title="Delete This Image" data-toggle="tooltip">
+              <i class="icon ion-ios-close text-red"></i>
+            </a>
+          <img src="/Uploads/{{Name}}" data-src="/Content/Assets/Images/loading.gif" class="image-modal-large" />
+        </div>
+      {{/each}}
+    </div>
+{{/ifx}}

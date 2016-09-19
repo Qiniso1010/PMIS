@@ -1,0 +1,51 @@
+
+<ul class="sidebar-menu" id="menu-side">
+
+    {{#each rows}}
+    <li class="{{toLowerCase menux.menu}} treeview " id="{{toLowerCase menux.menu}}-menu">
+        {{#if menux.link "#"}}
+        <a data-id="{{toLowerCase menux.menu}}" href="javascript:;">
+            <i class="icon ion-ios-arrow-up"></i>
+            <span>{{replace menux.menu}}</span>
+        </a>
+        {{else}}
+        <a data-id="{{toLowerCase menux.menu}}" href="{{menux.link}}">
+            <i class="icon ion-ios-grid-view-outline"></i>
+            <span>{{replace menux.menu}}</span>
+        </a>
+        {{/if}}
+        <ul class="{{toLowerCase menux.menu}} treeview-menu" style="display:block;">
+            {{#each submenu}}
+            <li id="list-menu" class="{{toLowerCase menu}}">
+                <a href="{{toLowerCase link}}">
+                    {{replace menu}}
+                </a>
+            </li>
+            {{/each}}
+
+        </ul>
+    </li>
+    {{else}}
+    <li class="logout treeview menu-open" id="side-menu" style="display:block;">
+        <a id="logout" href="javascript:;">
+            <i class="icon ion-ios-arrow-up"></i>
+            <span>!Empty</span>
+        </a>
+    </li>
+    {{/each}}
+    <li class="logout treeview menu-open" id="side-menu" style="display:block;">
+        <a id="logout" href="javascript:;">
+            <i class="icon ion-log-out"></i>
+            <span>Logout</span>
+        </a>
+    </li>
+</ul>
+
+{{!-- <ul class="sidebar-menu fixed-button-bottom">
+  <li class="logout treeview menu-open" id="side-menu">
+      <a id="logout" href="javascript:;">
+          <i class="icon ion-log-out"></i>
+          <span>Logout</span>
+      </a>
+  </li>
+</ul> --}}

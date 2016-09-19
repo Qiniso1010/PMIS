@@ -1,0 +1,10 @@
+{{#ifx Rows}}
+
+  {{else}}
+
+      {{#each Rows}}
+        <div class="images-header">
+          <img src="/Uploads/{{Name}}" data-src="/Content/Assets/Images/loading.gif" class="image-modal-large" />
+        </div>
+      {{/each}}
+{{/ifx}}

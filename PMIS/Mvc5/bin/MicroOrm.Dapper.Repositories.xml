@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MicroOrm.Dapper.Repositories</name>
+    </assembly>
+    <members>
+        <member name="T:MicroOrm.Dapper.Repositories.DbContext.DapperDbContext">
+            <summary>
+            Class is helper for use and close IDbConnection
+            </summary>
+        </member>
+        <member name="T:MicroOrm.Dapper.Repositories.Attributes.LogicalDelete.DeletedAttribute">
+            <summary>
+            Use with "Status" for logical delete
+            </summary>
+        </member>
+        <member name="T:MicroOrm.Dapper.Repositories.Attributes.LogicalDelete.StatusAttribute">
+            <summary>
+            Use with "Deleted" for logical delete
+            </summary>
+        </member>
+        <member name="T:MicroOrm.Dapper.Repositories.SqlGenerator.ISqlGenerator`1">
+            <summary>
+            Universal SqlGenerator for Tables
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="T:MicroOrm.Dapper.Repositories.SqlGenerator.QueryParameter">
+            <summary>
+            Class that models the data structure in coverting the expression tree into SQL and Params.
+            </summary>
+        </member>
+        <member name="M:MicroOrm.Dapper.Repositories.SqlGenerator.QueryParameter.#ctor(System.String,System.String,System.Object,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MicroOrm.Dapper.Repositories.SqlGenerator.QueryParameter" /> class.
+            </summary>
+            <param name="linkingOperator">The linking operator.</param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="propertyValue">The property value.</param>
+            <param name="queryOperator">The query operator.</param>
+        </member>
+        <member name="T:MicroOrm.Dapper.Repositories.SqlGenerator.QueryResult">
+            <summary>
+            A result object with the generated sql and dynamic params.
+            </summary>
+        </member>
+        <member name="M:MicroOrm.Dapper.Repositories.SqlGenerator.QueryResult.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the class.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <param name="param">The param.</param>
+        </member>
+        <member name="P:MicroOrm.Dapper.Repositories.SqlGenerator.QueryResult.Sql">
+            <summary>
+            Gets the SQL.
+            </summary>
+            <value>
+            The SQL.
+            </value>
+        </member>
+        <member name="P:MicroOrm.Dapper.Repositories.SqlGenerator.QueryResult.Param">
+            <summary>
+            Gets the param, for Select
+            </summary>
+            <value>
+            The param.
+            </value>
+        </member>
+        <member name="M:MicroOrm.Dapper.Repositories.SqlGenerator.SqlGenerator`1.FillQueryProperties(System.Linq.Expressions.BinaryExpression,System.Linq.Expressions.ExpressionType,System.Collections.Generic.List{MicroOrm.Dapper.Repositories.SqlGenerator.QueryParameter}@)">
+            <summary>
+            Fill query properties
+            </summary>
+            <param name="body">The body.</param>
+            <param name="linkingType">Type of the linking.</param>
+            <param name="queryProperties">The query properties.</param>
+        </member>
+        <member name="M:MicroOrm.Dapper.Repositories.SqlGenerator.ExpressionHelper.GetPropertyName(System.Linq.Expressions.BinaryExpression)">
+            <summary>
+            Gets the name of the property.
+            </summary>
+            <param name="body">The body.</param>
+            <returns>The property name for the property expression.</returns>
+        </member>
+    </members>
+</doc>

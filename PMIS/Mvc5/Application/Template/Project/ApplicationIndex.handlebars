@@ -1,0 +1,42 @@
+<section class="content">
+  <div class="row">
+    {{!--Form Append--}}
+    <div id="NewProject" class="col-md-12 border-bottom" style="margin-bottom:10px !important;">
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon">
+              <a href="javascript:;" id="hide_keterangan" data-id="hide" title="Hide / Unhide Keterangan" data-toggle="tooltip" data-placement="right">
+              </a>
+          </span>
+          <input type="text" class="form-control no-border" tabindex="1" placeholder="New Project" id="name" name="name" value="{{Name}}" />
+          <span class="input-group-btn">
+              <button id="btnSave" tabindex="2" class="btn btn-success btn-flat r-3 no-border button-save-project" type="button">Save</button>
+          </span>
+        </div>
+        <div class="form-group" id="keterangan-id">
+          <textarea class="input-block-level" id="keterangan" tabindex="2" name="keterangan" rows="18"></textarea>
+          <p class="help-block">Isikan keterangan (kosongkan jika tidak).</p>
+        </div>
+
+
+      </form>
+
+    </div>
+    {{!-- end form  --}}
+
+
+    {{!--Table List--}}
+    <div class="col-lg-12" style="margin-bottom: 10px;">
+      Keterangan :
+      <label class="label bg-red r-2">Lampiran</label>
+      <label class="label bg-green r-2">Items</label>
+    </div>
+    <div class="col-xs-12" style="background-color: #ffffff;">
+      <div class="box-body table-responsive no-padding no-border">
+        <table id="listing-grid" class="table table-hover"></table>
+      </div>
+    </div>
+    {{!-- end table list --}}
+
+  </div>
+</section>

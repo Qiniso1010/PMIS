@@ -1,0 +1,21 @@
+<ul>
+  {{#each Rows}}
+    <li>
+      <a href="/Uploads/{{Name}}" target="_blank">
+      {{#ifNull RealName}}
+        {{Name}}
+      {{else}}
+        {{RealName}} &nbsp;
+      {{/ifNull}}
+    </a>
+
+      <div class="pull-right" id="btnRemoveFileSet">
+        <a href="javascript:;" data-toogle="tooltip" id="btnRemoveFile" data-placement="right" data-original-title="remove" data-id="{{Id}}">
+          <i class="lnr lnr-cross"></i>
+        </a>
+      </div>
+
+      {{!-- {{/each}}
+      --}} </li>
+  {{/each}}
+</ul>

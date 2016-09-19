@@ -1,0 +1,14 @@
+<ul>
+  {{#each Rows}}
+    <li>
+      <a href="/Uploads/{{Name}}" target="_blank">
+      {{#ifNull RealName}}
+        {{Name}}
+      {{else}}
+        {{RealName}} &nbsp;
+      {{/ifNull}}
+    </a>
+
+    </li>
+  {{/each}}
+</ul>

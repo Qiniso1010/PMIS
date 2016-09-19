@@ -1,0 +1,58 @@
+﻿<div class="wrapper">
+
+    <!-- main menu load -->
+    <header class="main-header">
+        @Html.Partial("_Header")
+    </header>
+
+    <!-- Left side column. contains the logo and sidebar -->
+    <div id="id=" wrapper"">
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            @*@Html.Partial("_BackboneSidebar")*@
+        </aside>
+    </div>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div id="loading">
+        <div class="loading-block">
+            <div class="center">
+                <center>
+                    <h4><div id="progress-bar"></div></h4>
+                    <h4>Please wait....</h4>
+                    <img src="/Content/Assets/Images/loading.gif" />
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+
+        <!-- Content Header (Page header) -->
+        <div id="content-header" style="margin-bottom:6px!important;">
+
+        </div>
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div id="content">
+                    <input type="hidden" value="@ViewBag.Routes" id="routes" />
+                    <input type="hidden" value="@ViewBag.TagLine" id="tagline" />
+                    <input type="hidden" value="@ViewBag.Username" id="Username" />
+
+                    <noscript>
+                        <div class="alert flat alert-error">
+                            <i class="fa fa-warning"></i> <b>Error : </b> Please <a href="http://www.enable-javascript.com/" target="_blank">enable Javascript</a> to continue.
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+    </div><!-- /.content-wrapper -->
+    <!-- end main sidebar -->
+    @Html.AntiForgeryToken()
+    <input type="hidden" value="@ViewBag.IsDefault" name="IsDefault" id="IsDefault" />
+    <input type="hidden" value="@ViewBag.IsSupervisor" name="IsSupervisor" id="IsSupervisor" />
+
+    
+</div>
+@Html.Partial("_Footer")

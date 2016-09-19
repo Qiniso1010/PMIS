@@ -1,0 +1,31 @@
+﻿<html>
+
+<body width="100%" height="100%" style="Margin: 0;">
+<font face="Helvetica, Arial, sans-serif">
+
+<div style="background-color:#ddd; padding:20px;">
+	<img src="{0}" />
+</div>
+
+<div style="padding:30px; margin-top:5px;">
+
+<p>Yth. {1},<p>
+
+<p>
+{2}
+
+<hr/>
+Pemberitahuan, terdapat Dokumen baru <b>'{3}'</b>  anda dapat melihat dokumen ini dengan 'Login' di aplikasi E-OFFICE (Tata Naskah Dinas Online)  <br/>
+</p>
+<center>
+<p>
+<a style="background-color:#dd4b39;border:0px;border-radius:3px;color:#ffffff;padding:12px 25px 15px 25px;font-size: 14px;font-weight: normal;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;text-decoration:none;" href="{4}">Login</a>
+
+</p>
+</center>
+
+<br/>
+<p>Pengirim, <br/> {5} ({6})</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\bin\Debug\UnitTestMVC5.dll
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\bin\Debug\UnitTestMVC5.pdb
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\obj\Debug\UnitTestMVC5.csprojResolveAssemblyReference.cache
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\obj\Debug\UnitTestMVC5.dll
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\obj\Debug\UnitTestMVC5.pdb
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\bin\Debug\NCrunch.Framework.dll
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\bin\Debug\nunit.framework.dll
+E:\Project\N13_APPS\PROJECT_MVC\Mvc5\UnitTestMVC5\bin\Debug\nunit.framework.xml
+E:\Project\N13_APPS\PEMPROV\JadwalPimpinan\UnitTestMVC5\obj\Debug\UnitTestMVC5.csprojResolveAssemblyReference.cache

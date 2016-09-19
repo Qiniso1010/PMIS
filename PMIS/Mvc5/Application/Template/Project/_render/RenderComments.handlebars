@@ -1,0 +1,42 @@
+
+  <div class="direct-chat-messages">
+    
+      
+      {{#each Rows}}
+      
+      {{#if IsUser false}}
+      
+      <div class="direct-chat-msg">
+        <div class="direct-chat-info clearfix">
+            <span class="direct-chat-name pull-left">{{Name}}</span>
+            <span class="direct-chat-timestamp pull-right">{{DateFormatC CreatedAt}}</span>
+          </div><!-- /.direct-chat-info -->
+          <div class="direct-chat-text">
+            {{CommentText}} 
+          </div><!-- /.direct-chat-text -->
+        </div><!-- /.direct-chat-msg -->
+      {{else}}
+         <!-- Message to the right -->
+          <div class="direct-chat-msg right">
+            <div class="direct-chat-info clearfix">
+              <span class="direct-chat-name pull-right">{{Name}}</span>
+              <span class="direct-chat-timestamp pull-left">{{DateFormatC CreatedAt}}</span>
+            </div><!-- /.direct-chat-info -->
+            <div class="direct-chat-text">
+                {{CommentText}}
+            </div><!-- /.direct-chat-text -->
+          </div><!-- /.direct-chat-msg -->
+      {{/if}}
+     
+    
+     
+    
+    {{/each}}
+    
+  </div>
+    
+    <!-- Message. Default to the left -->
+   
+
+  
+

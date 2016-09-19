@@ -1,0 +1,35 @@
+﻿
+<div class="container">
+    <div class="form-inline login-title">
+        <img class="login-thumb" src="/Content/login_flat/img/web.svg" />
+        <span>@ViewBag.Title</span>
+
+       
+
+    </div>
+</div>
+
+  @using (Html.BeginForm("Index", "Login", System.Web.Mvc.FormMethod.Post, new { @class = "login-form", @id = "Login" }))
+  {
+    @Html.AntiForgeryToken()
+    
+    <div class="form">
+        @if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+            <div class="alert flat alert-danger alert-dismissable no-border" style="border-radius: 2px;text-align: left !important;">
+                <b><i class="fa fa-remove"></i> </b> @ViewBag.Message
+            </div>
+        }
+        @Html.TextBox("username", Request["username"], new { @placeholder = "Username", @id = "username", @required = "required" })
+        @Html.Password("password", null, new { @placeholder = "Password Here", @id = "password", @required = "required" })
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        <p class="message">Masukan username dan password valid,belum memiliki account segera kontak admin</p>
+
+    </div>
+  }
+
+
+
+
+

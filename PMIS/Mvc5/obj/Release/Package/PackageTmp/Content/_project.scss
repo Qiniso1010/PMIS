@@ -1,0 +1,180 @@
+.input-group-addon {
+  border: 0 !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #ddd !important;
+}
+.button-save-project {
+  padding: 2px 20px !important;
+}
+// radius
+.r-2 {
+  border-radius: 2px !important;
+}
+.r-3 {
+  border-radius: 3px !important;
+}
+.r-50 {
+  border-radius: 50% !important;
+}
+// width
+.w-30 {
+  width: 30% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-80 {
+  width: 80% !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.bootstrap-table .fixed-table-toolbar input[type="text"] {
+  // border-bottom: 1px solid #ddd !important;
+  background-color: #fff !important;
+}
+.bootstrap-table .fixed-table-toolbar input[type="text"],
+.bootstrap-table .fixed-table-toolbar .btn {
+  box-shadow: none;
+  background-color: #ddd;
+  border: 1px solid transparent;
+  height: 35px;
+  -webkit-transition: all 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  -o-transition: all 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  transition: all 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+}
+.bootstrap-table .fixed-table-toolbar input[type="text"]:focus,
+.bootstrap-table .fixed-table-toolbar input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  border: 0 !important;
+  // border-bottom: 1px solid #ddd;
+  color: #666;
+}
+// Logo New Position
+.logo-backend {
+  width: 190px !important;
+  height: 45px !important;
+  margin-left: -30px !important;
+  margin-top: -10px !important;
+}
+// Chat
+.direct-chat-text {
+  background: #f3f3f3 !important;
+  border: 1px solid #f3f3f3 !important;
+}
+.direct-chat-text:after,
+.direct-chat-text:before {
+  display: none;
+}
+.fixed-button-bottom {
+  bottom: 0;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  position: fixed;
+  width: 200px !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #ddd!important;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  background-color: #ddd !important;
+  border-color: #ddd !important;
+}
+// sweet alert
+.sweet-alert {
+  border-radius: 2px !important;
+}
+.sweet-alert button {
+  border-radius: 2px !important;
+}
+.sweet-alert h2 {
+  font-weight: normal !important;
+  font-size: 22px !important;
+}
+.direct-chat-text {
+  background: #f3f3f3 !important;
+  border: 1px solid #f3f3f3 !important;
+}
+.direct-chat-text:after,
+.direct-chat-text:before {
+  display: none;
+}
+.right .direct-chat-text {
+  margin-right: 5px;
+  background: rgb(48, 133, 214) !important;
+  color: #fff !important;
+}
+.input-group .form-control {
+  z-index: 0 !important;
+}
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
+  z-index: 0 !important;
+}
+// Side Bar
+.main-sidebar,
+.left-side {
+  z-index: 0 !important;
+}
+// Modal Dialog
+.modal-dialog-set {
+  width: 100% !important;
+}
+.modal-content-set {
+  width: 800px !important;
+  margin: 0 auto !important;
+}
+.modal {
+  background: rgba(246, 249, 247, 0.9) !important;
+}
+.image-modal {
+  padding: 20px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+.image-modal-large {
+  max-width: 720px !important;
+  width: 720px !important;
+  padding: 2px;
+}
+.image-modal-large-view {
+  // max-width: 660px !important;
+  width: 100% !important;
+  padding: 2px;
+  max-height: 450px;
+}
+.image-delete {
+  // z-index: 1;
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  padding: 20px;
+}
+.images-thumb {
+  width: 100px !important;
+  max-height: 100px !important;
+  float: left;
+  padding-right: 15px;
+}
+// Check List
+.check-list {
+  float: left !important;
+  padding-right: 10px !important;
+}
+.search-nav {
+  margin-top: 8px;
+  margin-right: 10px;
+  width: 300px !important;
+}
+// lazy load
+// img {
+//   opacity: 0;
+//   transition: opacity .3s ease-in;
+// }

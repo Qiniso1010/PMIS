@@ -1,0 +1,102 @@
+<section class="content">
+  <div class="row">
+
+
+    <div class="col-md-8 border-right">
+      {{#ifNull images}}
+
+        {{else}}
+          <div class="images-header">
+            <a href="javascript:;" data-id="{{images.Id}}" class="image-delete">
+              <label class="label bg-red r-2">{{images_hitung}}</label>
+            </a>
+            <a href="javascript:;" id="btnImageDetail" data-id="{{Rows.Id}}" title="Lihat Detail Gambar" data-toggle="tooltip">
+
+              <img src="/Uploads/{{images.Name}}" data-src="/Content/Assets/Images/loading.gif" class="image-modal-large-view" />
+            </a>
+          </div>
+      {{/ifNull}}
+
+      {{#ifNull Rows.Keterangan}}
+        {{else}}
+          <hr/>
+          <p>
+            {{{Rows.Keterangan}}}
+          </p>
+      {{/ifNull}}
+
+      <div id="NewProject" class="col-md-12 border-bottom" style="margin-bottom:10px !important;">
+        <div class="input-group">
+          <span class="input-group-addon">
+              {{!-- <i class="icon ion-ios-plus-empty size-18"></i> --}}
+              <a href="javascript:;" id="hide_keterangan" data-id="hide" title="Hide / Unhide Keterangan" data-toggle="tooltip" data-placement="right">
+              </a>
+          </span>
+          <input type="text" class="form-control no-border" tabindex="1" placeholder="Add Checklist Item" id="name" name="name" value="" />
+          <span class="input-group-btn">
+              <button id="btnSave" tabindex="2" class="btn btn-success btn-flat r-3 no-border button-save-project" type="button">Save</button>
+          </span>
+        </div>
+        <div class="form-group" id="keterangan-id">
+          <textarea class="input-block-level" id="keterangan" tabindex="2" name="keterangan" rows="18"></textarea>
+          <p class="help-block">Isikan keterangan (kosongkan jika tidak).</p>
+        </div>
+      </div>
+
+      {{!--Table List--}}
+      <div class="col-xs-12" style="background-color: #ffffff;z-index: 1000;">
+        <div class="box-body table-responsive no-padding no-border">
+          <table id="listing-grid" class="table table-hover"></table>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <form id="FormUpload" method="post" enctype="multipart/form-data">
+          {{!--<div class="form-group" id="upload-id">--}}
+          <div class="dashboard-section-header">
+            <h4 class="dashboard-section-header-title">
+                <div class="btn no-border btn-file size-18">
+                    <i class="lnr lnr-cloud-upload size-18"></i> Attach a file
+                    <input type="file" id="file" name="file" class="form-control span-small" tabindex="9"/>
+                </div>
+            </h4>
+          </div>
+          {{!-- search file --}}
+          <div class='form-group'>
+            <input type="text" class="form-control r-3" id="search_file" name="search_file" placeholder="Cari file..."/>
+          </div>
+          <span id="file-list"></span>
+
+          <input type="hidden" id="TasksId" name="TasksId" value="{{Rows.Id}}" />{{!--</div>--}}
+        </form>
+      </div>
+
+
+    </div>
+    <div class="col-md-4">
+
+      <header class="dashboard-section-header">
+        <h4 class="dashboard-section-header-title">
+             Comments
+        </h4>
+      </header>
+      <div class="comment-list" id="comment-list">
+
+      </div>
+      <div id="NewProjectComment" class="col-md-12 border-bottom" style="margin-bottom:10px !important;">
+        <div class="input-group">
+          <span class="input-group-addon">
+              <i class="icon ion-chatbubble-working size-18"></i>
+          </span>
+          <input type="text" class="form-control no-border" tabindex="1" placeholder="Add Comment" id="comment" name="comment" value="" />
+          <span class="input-group-btn">
+              <button id="btnSaveComment" tabindex="2" class="btn btn-info btn-flat r-3 no-border button-save-project" type="button">Say it</button>
+          </span>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</section>

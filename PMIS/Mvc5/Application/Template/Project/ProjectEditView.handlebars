@@ -1,0 +1,24 @@
+<section class="content">
+    <div class="row">
+        {{!--Form Append--}}
+        <div id="NewProject" class="col-md-12 border-bottom" style="margin-bottom:10px !important;">
+            <div class="input-group" id="name-id">
+                <span class="input-group-addon">
+                    <i class="lnr lnr-pencil size-18"></i>
+                </span>
+                <input type="hidden" id="id" value="{{Rows.Id}}" name="id"/>
+                <input type="text" class="form-control no-border" required tabindex="1" placeholder="New Project" id="name" name="name" value="{{Rows.Name}}"/>
+                <span class="input-group-btn">
+                    <button id="btnSave" tabindex="2" class="btn btn-success btn-flat r-3 no-border button-save-project" type="button">Save</button>
+                </span>
+            </div>
+
+            <div class="form-group" id="keterangan-id">
+              <textarea class="input-block-level" id="keterangan" tabindex="2" name="keterangan" rows="18">{{{Rows.Keterangan}}}</textarea>
+              <p class="help-block">Isikan keterangan (kosongkan jika tidak).</p>
+            </div>
+        </div>
+
+
+    </div>
+</section>

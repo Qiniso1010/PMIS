@@ -1,0 +1,17 @@
+<div class="col-md-12">
+    <h3>
+        {{name}} <small> Project Detail.</small>
+        <div class="pull-right">
+            {{#if done false}}
+                <a href="javascript:;" data-id="{{id}}" id="btnIsCompleteProject">
+                    <i class="icon ion-ios-circle-outline text-gray" style="padding-right:10px !important;"></i>
+                </a>
+            {{else}}
+                <a href="javascript:;" data-id="{{id}}" id="btnIsCompleteProject">
+                    <i class="icon ion-ios-checkmark text-green" style="padding-right:10px !important;"></i>
+                </a>
+            {{/if}}
+
+        </div>
+    </h3>
+</div>
