@@ -13,7 +13,7 @@ namespace Mvc5.Libraries
 {
     public static class Stored
     {
-        public static string SecretKey = "%$#@#$8893";
+        public static string SecretKey = "%$#@#3243243advaadadfadff34adva34"; // private key
         public static bool? IsLogin;
         public static IDbConnection db = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["ProjectConn"].ConnectionString);
         public static IDbConnection dbMysql = new MySqlConnection(ConfigurationManager.ConnectionStrings["ConnExtMember"].ConnectionString);
