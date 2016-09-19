@@ -51,31 +51,7 @@ namespace Mvc5.Libraries
                 return e.Message;
             }
         }
-        //private static string Encrypt(string stringToEncrypt, string SEncryptionKey)
-        //{
-        //    try
-        //    {
-        //        TripleDESCryptoServiceProvider objDESCrypto =
-        //        new TripleDESCryptoServiceProvider();
-        //        MD5CryptoServiceProvider objHashMD5 = new MD5CryptoServiceProvider();
-        //        byte[] byteHash, byteBuff;
-        //        string strTempKey = SEncryptionKey;
-        //        byteHash = objHashMD5.ComputeHash(ASCIIEncoding.ASCII.GetBytes(strTempKey));
-        //        objHashMD5 = null;
-        //        objDESCrypto.Key = byteHash;
-        //        objDESCrypto.Mode = CipherMode.ECB; //CBC, CFB
-        //        byteBuff = ASCIIEncoding.ASCII.GetBytes(stringToEncrypt);
-        //        return Convert.ToBase64String(objDESCrypto.CreateEncryptor().
-        //            TransformFinalBlock(byteBuff, 0, byteBuff.Length));
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return e.Message;
-        //    }
-        //}
-
-
-
+        
         // try to decrypt
         private string Decrypt(string stringToDecrypt, string sEncryptionKey)
         {
@@ -97,32 +73,7 @@ namespace Mvc5.Libraries
                 return e.Message;
             }
         }
-        //private static string Decrypt(string stringToDecrypt, string sEncryptionKey)
-        //{
-        //    try
-        //    {
-        //        TripleDESCryptoServiceProvider objDESCrypto =
-        //        new TripleDESCryptoServiceProvider();
-        //        MD5CryptoServiceProvider objHashMD5 = new MD5CryptoServiceProvider();
-        //        byte[] byteHash, byteBuff;
-        //        string strTempKey = sEncryptionKey;
-        //        byteHash = objHashMD5.ComputeHash(ASCIIEncoding.ASCII.GetBytes(strTempKey));
-        //        objHashMD5 = null;
-        //        objDESCrypto.Key = byteHash;
-        //        objDESCrypto.Mode = CipherMode.ECB; //CBC, CFB
-        //        byteBuff = Convert.FromBase64String(stringToDecrypt);
-        //        string strDecrypted = ASCIIEncoding.ASCII.GetString
-        //        (objDESCrypto.CreateDecryptor().TransformFinalBlock
-        //        (byteBuff, 0, byteBuff.Length));
-        //        objDESCrypto = null;
-        //        return strDecrypted;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return e.Message;
-        //    }
-        //}
-
+       
         // try encrypt password / string
         public static string EncryptPassword(string strQueryString)
         {
@@ -141,32 +92,7 @@ namespace Mvc5.Libraries
 
         }
 
-        //public string enStrPass(string strQueryString)
-        //{
-        //    SecureClass oES = new SecureClass();
-        //    string str = null;
-        //    string @out = null;
-        //    if (strQueryString != null)
-        //    {
-        //        if (string.IsNullOrEmpty(config.AppConfig("key_secure", Stored.AppConn, Global_asax.DbType).ToString))
-        //        {
-        //            str = "#$#@%^&65443nkadngkKNkbbIKKnn";
-        //            //default key
-        //        }
-        //        else
-        //        {
-        //            str = config.AppConfig("key_secure", Stored.AppConn, Global_asax.DbType).ToString;
-        //        }
-        //        @out = util.GenEncryptSHA1(strQueryString);
-        //        return oES.Encrypt(@out, str);
-        //    }
-        //    else
-        //    {
-        //        return strQueryString;
-        //    }
-
-        //}
-
+       
         // try to encrypt again
         public static string GenEncryptSHA1(string strPassword)
         {
