@@ -19,8 +19,8 @@ namespace Mvc5.Areas.Auth.Libraries
         public static string CookieName = "ptpn13";
         public static string ModuleName = "project";
         public static bool? IsLogin = false;
-        public static string email = "biroumumkalbar@gmail.com";
-        public static string password = "p4ss@biroumum";
+        public static string email = "your@gmail.com";
+        public static string password = "your_pass";
         public static string GmailSMTP = "smtp.gmail.com";
         public static string SMTP = "";
         public static string ImageLogo = String.Format("{0}{1}",Areas.Auth.Libraries.Config.BaseUrl,"/Assets/Images/logo-header.png");
