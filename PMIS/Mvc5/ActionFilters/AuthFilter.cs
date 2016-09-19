@@ -44,31 +44,6 @@ namespace Mvc5.ActionFilters
                 });
             }
             base.OnActionExecuting(filterContext);
-
-            //AuthorizationService _authorizeService = new AuthorizationService();
-            //string userId = HttpContext.Current.User.Identity.GetUserId();
-            //if (userId != null)
-            //{
-            //    var result = _authorizeService.CanManageUser(userId);
-            //    if (!result)
-            //    {
-
-            //        filterContext.Result = new RedirectToRouteResult(
-            //            new RouteValueDictionary{{ "controller", "Account" },
-            //                                { "action", "Login" }
-
-            //                             });
-            //    }
-            //}
-            //else
-            //{
-            //    filterContext.Result = new RedirectToRouteResult(
-            //    new RouteValueDictionary{{ "controller", "Account" },
-            //                              { "action", "Login" }
-
-            //                             });
-
-            //}'
         }
 
 
